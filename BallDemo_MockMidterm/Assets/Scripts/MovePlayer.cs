@@ -63,6 +63,8 @@ public class MovePlayer : MonoBehaviour {
 
 			}
 		}
+
+		OSCHandler.Instance.SendMessageToClient("pd", "/unity/speed", rb.velocity.magnitude);
 		//*************
 	}
 		
