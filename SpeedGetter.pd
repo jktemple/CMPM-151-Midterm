@@ -1,4 +1,4 @@
-#N canvas 69 103 1920 989 10;
+#N canvas -108 -24 1920 956 10;
 #X text 164 48 1 Set IP Address : network address;
 #X text 164 68 2 Set Ports (sending and listening);
 #X text 164 87 3 Set OSC Addresses (routing osc data;
@@ -149,16 +149,18 @@
 #X text 451 198 Tirgger when picking up rotating cube...;
 #X text 946 189 Trigger noise burst when running into a wall;
 #X text 1313 188 Sequence playback: tempo increases as more cubes are collected.;
-#X obj 937 514 r oscspeed;
+#X obj 938 511 r oscspeed;
 #X floatatom 937 539 5 0 0 0 - - - 0;
 #X text 1026 527 Receive the Speed of the rigidbody;
-#X obj 886 586 noise~;
-#X obj 886 628 lop~, f 9;
+#X obj 860 581 noise~;
+#X obj 886 620 lop~, f 9;
 #X floatatom 937 586 5 0 0 0 - - - 0;
 #X obj 886 695 dac~;
 #X obj 886 656 *~ 1;
-#X obj 982 640 hsl 136 16 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 976 642 hsl 136 16 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 937 561 * 150;
+#X text 1023 563 Increases the cutoff frequency of the low pass filter as the speed increases;
+#X text 970 664 Volume control for the noise sound;
 #X connect 4 0 27 0;
 #X connect 5 0 14 0;
 #X connect 5 1 19 0;
