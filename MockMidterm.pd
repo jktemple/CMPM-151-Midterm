@@ -1,4 +1,4 @@
-#N canvas 77 -16 1920 989 10;
+#N canvas -178 39 1920 1041 10;
 #X text 177 277 creation arguments are OSC address;
 #X text 179 238 set message to change OSC address;
 #X text 164 48 1 Set IP Address : network address;
