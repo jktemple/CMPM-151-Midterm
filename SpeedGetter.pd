@@ -1,4 +1,4 @@
-#N canvas 71 135 1924 992 10;
+#N canvas 22 -26 1920 989 10;
 #X text 177 277 creation arguments are OSC address;
 #X text 179 238 set message to change OSC address;
 #X text 164 48 1 Set IP Address : network address;
@@ -152,8 +152,18 @@
 #X text 946 189 Trigger noise burst when running into a wall;
 #X text 1313 188 Sequence playback: tempo increases as more cubes are collected.;
 #X obj 937 514 r oscspeed;
-#X floatatom 937 570 5 0 0 0 - - - 0;
+#X floatatom 937 539 5 0 0 0 - - - 0;
 #X text 1026 527 Receive the Speed of the rigidbody;
+#X obj 886 586 noise~;
+#X obj 886 628 lop~, f 9;
+#X floatatom 937 586 5 0 0 0 - - - 0;
+#X obj 184 238 output~;
+#X obj 194 248 output~;
+#X obj 204 258 output~;
+#X obj 886 695 dac~;
+#X obj 886 656 *~ 1;
+#X obj 982 640 hsl 136 16 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 937 561 * 150;
 #X connect 6 0 29 0;
 #X connect 7 0 16 0;
 #X connect 7 1 21 0;
@@ -242,3 +252,11 @@
 #X connect 77 0 13 0;
 #X connect 78 0 50 0;
 #X connect 82 0 83 0;
+#X connect 83 0 94 0;
+#X connect 85 0 86 0;
+#X connect 86 0 92 0;
+#X connect 87 0 86 1;
+#X connect 92 0 91 0;
+#X connect 92 0 91 1;
+#X connect 93 0 92 1;
+#X connect 94 0 87 0;
