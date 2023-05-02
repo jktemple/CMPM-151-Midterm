@@ -159,7 +159,7 @@
 #X obj 886 656 *~ 1;
 #X obj 976 642 hsl 136 16 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 937 561 * 150;
-#X text 1023 563 Increases the cutoff frequency of the low pass filter as the speed increases;
+#X text 1012 560 Increases the cutoff frequency of the low pass filter as the speed increases;
 #X text 970 664 Volume control for the noise sound;
 #X connect 4 0 27 0;
 #X connect 5 0 14 0;
